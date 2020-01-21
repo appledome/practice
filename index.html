@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="practice.css">
+<title>Lesson</title>
+<script src="Lesson.js"></script>
+<script src="practice.js"></script>
+<script>
+window.onload = function() {
+  setInterval(function() {
+    var dd = new Date();
+    document.getElementById("T1").innerHTML = dd.toLocaleString();
+  }, 1000);
+}
+</script>
+</head>
+<body>
+<!-- ヘロー表示　-->
+<h3>
+  <script>
+    document.write("Hello Fukuda");
+  </script>
+</h3>
+
+<!-- アラートボタン、Jsとの連携　-->
+<input type="button" value="時間知りたい？" onclick="jikan()">
+
+<!-- コンソールログの練習　-->
+  <script>
+    console.log(b);
+  </script>
+
+<!-- 時計の呼出し　-->
+<div id="T1"></div>
+
+</body>
+</html>
